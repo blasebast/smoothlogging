@@ -1,17 +1,16 @@
-class pyLogging(object):
+class smoothLogging(object):
     """
     This is class to make logging easier with writing to FS files
 
     Example usage is:
+            from smoothLogging import smoothLogging
 
-                from pyLogging import pyLogging
+            lobj = smoothLogging()
+            log = lobj.log("c:/temp","testlog")
+            log.info('log info')
+            log.warning('log warning')
+            log.error('log error')
 
-                lobject = pyLogging()
-                log = lobject.log("c:/temp", "mylog")
-
-                log.info("info log")
-                log.error("error log")
-                log.warning("warning log")
     Above example will write log files to c:/temp directory with name alike: mylog_20170317125251.log
     """
 
