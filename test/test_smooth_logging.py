@@ -1,5 +1,5 @@
 import unittest
-from sebmodules.smoothLogging import smoothlogging
+from sebmodules.smoothlogging import smoothlogging
 
 lobj = smoothlogging()
 log = lobj.log("c:/temp","testlog")
