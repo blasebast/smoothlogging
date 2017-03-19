@@ -1,8 +1,12 @@
+import glob
+import re
 import unittest
 from sebmodules.smoothlogging import smoothlogging
 
 lobj = smoothlogging()
-log = lobj.log("c:/temp","testlog")
+log_root_name = "testlog"
+rex = re.compile("%s_\d+\.log" % (log_root_name))
+log = lobj.log(".",log_root_name)
 
 class TestLoggingModule(unittest.TestCase):
 
@@ -15,5 +19,11 @@ class TestLoggingModule(unittest.TestCase):
     def test_error(self):
         self.assertIsNone(log.info("log error"))
 
+    def test_file_created(self):
+        self.rex = re.compile("testlog_\d+\.log")
+        self.number_of_log_files = glob.glob("./%s_*" % (log_root_name)).__len__()
+        self.assertGreaterEqual(self.number_of_log_files, 1)
+
 if __name__ == '__main__':
     unittest.main()
+
