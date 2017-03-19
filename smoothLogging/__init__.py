@@ -1,4 +1,4 @@
-class smoothLogging(object):
+class smoothlogging(object):
     """
     This is class to make logging easier with writing to FS files
 
