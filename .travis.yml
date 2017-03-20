@@ -1,14 +1,17 @@
 language: python
 python:
   - "2.7"
+  - "3.5"
 
 install:
-  - pip uninstall -y pytest
-  - pip install -r requirements.txt
-env:
-  - PYTEST_VERSION=2.9.2 PLUGINCOMPAT_SITE=http://plugincompat.herokuapp.com
-  - PYTEST_VERSION=3.0.3 PLUGINCOMPAT_SITE=http://plugincompat.herokuapp.com
-script: pytest  --junitxml=report.xml --cov && echo OK
+  - pip install pytest pytest-cov
+
+script:
+  - env
+  - if [[ $TRAVIS_PYTHON_VERSION == 2.7 ]]; then py.test  --junitxml=report.xml --cov; fi
+  - if [[ $TRAVIS_PYTHON_VERSION == 3.5 ]]; then pytest  --junitxml=report.xml --cov; fi
+  - echo "finished successfully at $(date '+ %Y-%m-%d %H:%M:%S')"
+  - uname -a
 
 branches:
   only:
