@@ -1,0 +1,8 @@
+bumpversion
+wheel
+tox
+coverage
+Sphinx
+cryptography
+PyYAML
+pytest
