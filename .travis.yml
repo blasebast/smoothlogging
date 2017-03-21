@@ -9,8 +9,8 @@ install:
 
 script:
   - env
-  - if [[ $TRAVIS_PYTHON_VERSION == 2.7 ]]; then pytest  --junitxml=/tmp/report_`date '+ %y%m%d_%H%M%S'`.xml --cov; fi
-  - if [[ $TRAVIS_PYTHON_VERSION == 3.5 ]]; then pytest  --junitxml=/tmp/report_`date '+ %y%m%d_%H%M%S'`.xml --cov; fi
+  - if [[ $TRAVIS_PYTHON_VERSION == 2.7 ]]; then pytest --junitxml=/tmp/"report_`date '+ %y%m%d_%H%M%S'`".xml --cov; fi
+  - if [[ $TRAVIS_PYTHON_VERSION == 3.5 ]]; then pytest --junitxml=/tmp/"report_`date '+ %y%m%d_%H%M%S'`".xml --cov; fi
   - ls -ltrh
 
 branches:
@@ -26,7 +26,7 @@ deploy:
     secure: zet+XSEqWu8t5z34KrmVDAiaH64E2sc/ARx9Fv/oe8WbgApyElaHeI4I8LPvWjjeD3jrrwkxTIcsijG5foHzaW6VkDIYb5wtIKyvH97kH5R+0GB0gxwvLMhwrky8QVVl/wjfRd4U6jn0Aurev953UqCFiOcm56ArpWFs4dzLHKfZIKfudouoqXkU+zfbI8agtCFr4VDmIihNnDu+/qJSTaUtbI/hgkW9OCx/CLftq6ryS/IpjMTBV3NdLtMUQxElKsoYEvsugR3cGOF3wboDAtcTFF1hFrmxA/FkenoerF5vmE8DzYyrV4UXj9+ILiU+oOEAWeQBUq/EmODpIiSYEx+SNuySABeLs3yj+7kA/jQSSKZD7+EpBhmrJZJUbj/W/DQp05c60FkiuaH4GU0WYyrLc1Q6hwvQBnq5un7kxbsmQVlh6LAjvRm5qmmE8PevMxxn2Xs8UgF+rEGGfBRyMT2/q+6rsYdZdibnABONRcs2f/FPYsMfkXHNKrHCXBTTEj5Ke2xv/Tup62HkZv6bkVMhKT1cUuyXSNMOQmEU5xwikdNbSMvH6NLV1REcYnVn3JE1272ejtQNwwIr0eFxO2saX+A4pHkRdUql51t01iHjLdJ9Fdch5Eg6NBD/GFNy/jswjOsswo2DzqjND95W0J3Cn+ptrHtZf5ec6lwluco=
   on:
     tags: true
-    
+
 after_deploy:
   - ls -ltrh
   - find . -name "*.whl"
