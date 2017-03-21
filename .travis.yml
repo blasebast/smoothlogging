@@ -9,8 +9,9 @@ install:
 
 script:
   - env
-  - if [[ $TRAVIS_PYTHON_VERSION == 2.7 ]]; then py.test  --junitxml=report.xml --cov; fi
-  - if [[ $TRAVIS_PYTHON_VERSION == 3.5 ]]; then pytest  --junitxml=report.xml --cov; fi
+  - if [[ $TRAVIS_PYTHON_VERSION == 2.7 ]]; then py.test  --junitxml=/tmp/report.xml --cov; fi
+  - if [[ $TRAVIS_PYTHON_VERSION == 3.5 ]]; then pytest  --junitxml=/tmp/report_`date '+ %y%m%d_%H%M%S.xml'` --cov; fi
+  - ls -ltrh 
 
 branches:
   only:
