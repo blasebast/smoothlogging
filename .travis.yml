@@ -28,3 +28,4 @@ deploy:
 after_deploy:
   - ls -ltrh
   - find . -name "*.whl"
+  - find build 
