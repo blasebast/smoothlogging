@@ -5,13 +5,13 @@ class smoothlogging(object):
     Example usage is:
             from smoothLogging import smoothLogging
 
-            lobj = smoothLogging()
-            log = lobj.log("c:/temp","testlog")
+            lobj = smoothlogging()
+            log = lobj.log("/path/to/log","testlog")
             log.info('log info')
             log.warning('log warning')
             log.error('log error')
 
-    Above example will write log files to c:/temp directory with name alike: mylog_20170317125251.log
+    Above example will write log files to "/path/to/log/ directory with name alike: testlog_20170317125251.log
     """
 
     def log(self,logPath, rname):

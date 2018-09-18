@@ -6,14 +6,15 @@ after_deploy:
 branches:
   only:
   - master
-  - /feature-.*/
 deploy:
   true:
-    tags: false
+    tags: true
   distributions: sdist bdist_wheel
   password:
     secure: JKnG7mvAyK7+o06//zAozi5D7ts8F6uO9n7fKqzzM5NyR4wsWIcshWBSwR8U8S01MUG6RccvKj2T+8guEkQnt+co6RbkDAgP5fijyDYagOExTRstF33pDYLi1x28KZFygsNzEN80R+mlbAE8w8oHW1SNbTg2tVQ74Gp270xvuItMlS1PpCf2nI8uEO5SwMfIQuKLALuxrYhHO2T7EdBBlLE+/5a2JLm5L1HB1hEt5D4Gq7kRSkZBtGSYJEnyEKYvjRHw5EnZ1RPrQDRIlw4qajqiN0jjp1J6edZXaVvTP1iIBwogCv8htzRaALWJhqQUHF2VRv7ujGaF0wDQFh1naKCALdxrXliMlqp5HyLYUP5BTBwAfHzg55N7z5KoDQ1cbtBcSofMcEIyAqmTwCTQAGaZnmH2arT8cq2ii99vy1D5R7k610pdLCT9sj+llGXfVMBXb9p/UdSnYfDZjr0K8M4Zekh3o0U/xLwkBAkxk6a9G/PCx7y+d+C9jCrNa6VKLmbMrm61+e0ZLFpsejS9kA/2uSnvCDeiVDdr2ymmeOJK29m+82ue6MfgffK4A9ZpYHsFLc/KjaQrNj9PJT4FPDRgx4mAWFDhje7yheYV2gtpExvL4XrSt5ic6A+YpXzFuLB6dvQZlJzR04ITswOU4vDk5Obf843FBxaPiITFVdo=
   provider: pypi
+  on:
+    condition: $TRAVIS_PYTHON_VERSION =~ ^2.7.*$
   user: blasebast
 install:
 - pip install pytest pytest-cov
@@ -21,12 +22,12 @@ language: python
 python:
 - '2.7'
 - '3.5'
-- '3.7'
 script:
 - env
 - if [[ $TRAVIS_PYTHON_VERSION == 2.7 ]]; then pytest --junitxml=/tmp/"report_`date
   '+ %y%m%d_%H%M%S'`".xml --cov; fi
 - if [[ $TRAVIS_PYTHON_VERSION == 3.5 ]]; then pytest --junitxml=/tmp/"report_`date
   '+ %y%m%d_%H%M%S'`".xml --cov; fi
-- ls -ltrh
+- if [[ $TRAVIS_PYTHON_VERSION == 3.7 ]]; then pytest --junitxml=/tmp/"report_`date
+    '+ %y%m%d_%H%M%S'`".xml --cov; fi
 sudo: required
