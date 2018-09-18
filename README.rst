@@ -1,28 +1,24 @@
 ===============================
-sebmodules
+smoothlogging
 ===============================
 
 
-.. image:: https://img.shields.io/pypi/v/sebmodules.svg
-        :target: https://pypi.python.org/pypi/sebmodules
+.. image:: https://img.shields.io/pypi/v/smoothlogging.svg
+        :target: https://pypi.python.org/pypi/smoothlogging
 
-.. image:: https://img.shields.io/travis/blasebast/sebmodules.svg
-        :target: https://travis-ci.org/blasebast/sebmodules
+.. image:: https://img.shields.io/travis/blasebast/smoothlogging.svg
+        :target: https://travis-ci.org/blasebast/smoothlogging
 
-.. image:: https://readthedocs.org/projects/sebmodules/badge/?version=latest
-        :target: https://sebmodules.readthedocs.io/en/latest/?badge=latest
+.. image:: https://readthedocs.org/projects/smoothlogging/badge/?version=latest
+        :target: https://smoothlogging.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
-.. image:: https://pyup.io/repos/github/blasebast/sebmodules/shield.svg
-     :target: https://pyup.io/repos/github/blasebast/sebmodules/
+.. image:: https://pyup.io/repos/github/blasebast/smoothlogging/shield.svg
+     :target: https://pyup.io/repos/github/blasebast/smoothlogging/
      :alt: Updates
 
 
 Handy modules, starting with smoothlogging to manage logging with files in just a few lines.
-
-
-* Free software: GNU General Public License v3
-* Documentation: https://sebmodules.readthedocs.io.
 
 
 Features

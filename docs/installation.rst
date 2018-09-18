@@ -8,13 +8,13 @@ Installation
 Stable release
 --------------
 
-To install sebmodules, run this command in your terminal:
+To install smoothlogging, run this command in your terminal:
 
 .. code-block:: console
 
-    $ pip install sebmodules
+    $ pip install smoothlogging
 
-This is the preferred method to install sebmodules, as it will always install the most recent stable release. 
+This is the preferred method to install smoothlogging, as it will always install the most recent stable release.
 
 If you don't have `pip`_ installed, this `Python installation guide`_ can guide
 you through the process.
@@ -26,19 +26,19 @@ you through the process.
 From sources
 ------------
 
-The sources for sebmodules can be downloaded from the `Github repo`_.
+The sources for smoothlogging can be downloaded from the `Github repo`_.
 
 You can either clone the public repository:
 
 .. code-block:: console
 
-    $ git clone git://github.com/blasebast/sebmodules
+    $ git clone git://github.com/blasebast/smoothlogging
 
 Or download the `tarball`_:
 
 .. code-block:: console
 
-    $ curl  -OL https://github.com/blasebast/sebmodules/tarball/master
+    $ curl  -OL https://github.com/blasebast/smoothlogging/tarball/master
 
 Once you have a copy of the source, you can install it with:
 
@@ -47,5 +47,5 @@ Once you have a copy of the source, you can install it with:
     $ python setup.py install
 
 
-.. _Github repo: https://github.com/blasebast/sebmodules
-.. _tarball: https://github.com/blasebast/sebmodules/tarball/master
+.. _Github repo: https://github.com/blasebast/smoothlogging
+.. _tarball: https://github.com/blasebast/smoothlogging/tarball/master

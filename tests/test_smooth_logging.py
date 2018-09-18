@@ -2,7 +2,7 @@ import glob
 import pytest
 import re
 import unittest
-from sebmodules.smoothlogging import smoothlogging
+from smoothlogging.smoothlogging import smoothlogging
 
 lobj = smoothlogging()
 log_root_name = "testlog"

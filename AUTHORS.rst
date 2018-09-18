@@ -5,7 +5,7 @@ Credits
 Development Lead
 ----------------
 
-* Sebastian Blasiak <rewelacyjny.rower@gmail.com>
+* Sebastian Blasiak <sebastian.blasiak@gmail.com>
 
 Contributors
 ------------

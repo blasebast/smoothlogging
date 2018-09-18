@@ -1,4 +1,4 @@
-Welcome to sebmodules's documentation!
+Welcome to smoothlogging's documentation!
 ======================================
 
 Contents:

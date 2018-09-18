@@ -10,31 +10,31 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements = [
-    # TODO: put package requirements here
+    "logging"
 ]
 
 test_requirements = [
-    # TODO: put package test requirements here
+    "pytest",
+    "pytest-cov"
 ]
 
 setup(
-    name='sebmodules',
-    version='0.1.0',
+    name='smoothlogging',
+    version='0.1.1',
     description="Handy modules, starting with smoothlogging to manage logging with files in just a few lines.",
     long_description=readme + '\n\n' + history,
     author="Sebastian Blasiak",
     author_email='rewelacyjny.rower@gmail.com',
-    url='https://github.com/blasebast/sebmodules',
+    url='https://github.com/blasebast/smoothlogging',
     packages=[
-        'sebmodules',
+        'smoothlogging',
     ],
-    package_dir={'sebmodules':
-                 'sebmodules'},
+    package_dir={'smoothlogging':'smoothlogging'},
     include_package_data=True,
     install_requires=requirements,
     license="GNU General Public License v3",
     zip_safe=False,
-    keywords='sebmodules, sebastian, blasiak, logging, smoothlogging, logfile',
+    keywords='sebastian, blasiak, logging, smoothlogging, logfile',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',

@@ -1,4 +1,4 @@
-* sebmodules version:
+* smoothlogging version:
 * Python version:
 * Operating System:
 

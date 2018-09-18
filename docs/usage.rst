@@ -2,6 +2,6 @@
 Usage
 =====
 
-To use sebmodules in a project::
+To use smoothlogging in a project::
 
-    import sebmodules
+    import smoothlogging
