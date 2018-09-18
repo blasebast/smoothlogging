@@ -18,13 +18,13 @@ smoothlogging
      :alt: Updates
 
 
-Handy modules, starting with smoothlogging to manage logging with files in just a few lines.
+Library to make logging easily configurable and consistent across the code.
 
 
 Features
 --------
 
-* TODO
+* This library can provide easy logging mechanism using standard output and time-stamped file.
 
 Credits
 ---------

@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from setuptools import setup
+from smoothlogging.version import VERSION
 
 with open('README.rst') as readme_file:
     readme = readme_file.read()
@@ -20,7 +21,7 @@ test_requirements = [
 
 setup(
     name='smoothlogging',
-    version='0.1.1',
+    version=VERSION,
     description="Handy modules, starting with smoothlogging to manage logging with files in just a few lines.",
     long_description=readme + '\n\n' + history,
     author="Sebastian Blasiak",
