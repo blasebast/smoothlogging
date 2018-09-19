@@ -25,7 +25,7 @@ setup(
     description="Handy modules, starting with smoothlogging to manage logging with files in just a few lines.",
     long_description=readme + '\n\n' + history,
     author="Sebastian Blasiak",
-    author_email='rewelacyjny.rower@gmail.com',
+    author_email='sebastian.blasiak (at) gmail.com',
     url='https://github.com/blasebast/smoothlogging',
     packages=[
         'smoothlogging',

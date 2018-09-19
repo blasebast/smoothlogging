@@ -9,13 +9,6 @@ smoothlogging
 .. image:: https://img.shields.io/travis/blasebast/smoothlogging.svg
         :target: https://travis-ci.org/blasebast/smoothlogging
 
-.. image:: https://readthedocs.org/projects/smoothlogging/badge/?version=latest
-        :target: https://smoothlogging.readthedocs.io/en/latest/?badge=latest
-        :alt: Documentation Status
-
-.. image:: https://pyup.io/repos/github/blasebast/smoothlogging/shield.svg
-     :target: https://pyup.io/repos/github/blasebast/smoothlogging/
-     :alt: Updates
 
 
 Library to make logging easily configurable and consistent across the code.
