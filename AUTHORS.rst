@@ -5,7 +5,7 @@ Credits
 Development Lead
 ----------------
 
-* Sebastian Blasiak <sebastian.blasiak (at) gmail.com>
+* Sebastian Blasiak <sebastian.blasiak@gmail.com>
 
 Contributors
 ------------
