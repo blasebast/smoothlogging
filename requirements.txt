@@ -1,3 +1,2 @@
-logging
 pytest
 pytest-cov

@@ -10,9 +10,7 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = [
-    "logging"
-]
+requirements = []
 
 test_requirements = [
     "pytest",
@@ -22,7 +20,7 @@ test_requirements = [
 setup(
     name='smoothlogging',
     version=VERSION,
-    description="Handy modules, starting with smoothlogging to manage logging with files in just a few lines.",
+    description="smoothlogging helps to log easily to file with timestamp + standard output",
     long_description=readme + '\n\n' + history,
     author="Sebastian Blasiak",
     author_email='sebastian.blasiak@gmail.com',

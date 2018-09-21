@@ -6,6 +6,7 @@ after_deploy:
 branches:
   only:
   - master
+  - fixing-requirements
 deploy:
   true:
     tags: true
