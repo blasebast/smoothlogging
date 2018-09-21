@@ -13,6 +13,10 @@ smoothlogging
 
 Library to make logging easily configurable and consistent across the code.
 
+Usage
+-----
+.. image:: https://raw.githubusercontent.com/blasebast/smoothlogging/master/image.png
+        :target: https://raw.githubusercontent.com/blasebast/smoothlogging/master/image.png
 
 Features
 --------
