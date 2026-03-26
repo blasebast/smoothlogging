@@ -1,4 +1,3 @@
-import os
+"""Version information for smoothlogging."""
 
-VERSION = '0.1.%s' % os.environ.get('TRAVIS_BUILD_NUMBER', 2)
-print("version is: %s" % VERSION)
+__version__ = '1.0.0'
