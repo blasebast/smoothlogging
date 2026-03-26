@@ -24,8 +24,13 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -e .
+        python -m pip install -e .
+
+    - name: Verify installation
+      run: |
+        python -c "from smoothlogging import SmoothLogging; print('✓ Package installed successfully')"
 
     - name: Run tests
       run: |
-        python -m unittest tests.test_smooth_logging.TestSmoothLogging -v
+        cd ${{ github.workspace }}
+        python -m unittest discover -s tests -p 'test_*.py' -v
