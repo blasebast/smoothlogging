@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from setuptools import setup
-from smoothlogging.version import __version__
+from setuptools import setup, find_packages
+
+__version__ = '1.0.0'
 
 with open('README.rst') as readme_file:
     readme = readme_file.read()
@@ -12,23 +13,17 @@ with open('HISTORY.rst') as history_file:
 
 requirements = []
 
-test_requirements = [
-    "pytest",
-    "pytest-cov"
-]
+test_requirements = []
 
 setup(
     name='smoothlogging',
     version=__version__,
-    description="smoothlogging helps to log easily to file with timestamp + standard output",
+    description="Easy and consistent logging to file with console output",
     long_description=readme + '\n\n' + history,
     author="Sebastian Blasiak",
     author_email='sebastian.blasiak@gmail.com',
     url='https://github.com/blasebast/smoothlogging',
-    packages=[
-        'smoothlogging',
-    ],
-    package_dir={'smoothlogging':'smoothlogging'},
+    packages=find_packages(exclude=['tests', '*.tests', '*.tests.*', 'tests.*']),
     include_package_data=True,
     install_requires=requirements,
     license="GNU General Public License v3",
