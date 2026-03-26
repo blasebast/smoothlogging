@@ -7,7 +7,7 @@ name = "smoothlogging"
 version = "1.0.0"
 description = "Easy and consistent logging to file with console output"
 readme = "README.rst"
-requires-python = ">=3.7"
+requires-python = ">=3.9"
 license = {text = "GNU General Public License v3 (GPLv3)"}
 authors = [
     {name = "Sebastian Blasiak", email = "sebastian.blasiak@gmail.com"}
